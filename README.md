@@ -1,23 +1,16 @@
-# Apache HTTP Server (httpd) S2I Sample Application
+Animated Background Headers
+=========
 
-This is a very basic sample application repository that can be built and deployed
-on [OpenShift](https://www.openshift.com) using the [Apache HTTP Server builder image](https://github.com/sclorg/httpd-container).
+A collection of animated background header effects for your inspiration. We use Canvas and Javascript to create an animated background for large site headers.
 
-The application serves a single static html page via httpd.
+[Article on Codrops](http://tympanus.net/codrops/?p=20153)
 
-To build and run the application:
+[Demo](http://tympanus.net/Development/AnimatedHeaderBackgrounds/)
 
-```
-$ s2i build https://github.com/sclorg/httpd-ex centos/httpd-24-centos7 myhttpdimage
-$ docker run -p 8080:8080 myhttpdimage
-$ # browse to http://localhost:8080
-```
+Integrate or build upon it for free in your personal or commercial projects. Don't republish, redistribute or sell "as-is". 
 
-You can also build and deploy the application on OpenShift, assuming you have a
-working `oc` command line environment connected to your cluster already:
+Read more here: [License](http://tympanus.net/codrops/licensing/)
 
-`$ oc new-app centos/httpd-24-centos7~https://github.com/sclorg/httpd-ex`
+[© Codrops 2014](http://www.codrops.com)
 
-You can also deploy the sample template for the application:
 
-`$ oc new-app -f https://raw.githubusercontent.com/sclorg/httpd-ex/master/openshift/templates/httpd.json`
